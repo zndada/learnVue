@@ -1,7 +1,7 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import inputNumber from '@/components/inputNumber'
-
+// import inputNumber from '@/components/inputNumber'
+import tabPane from '@/components/tabPane'
 Vue.use(Router)
 
 export default new Router({
@@ -9,7 +9,7 @@ export default new Router({
     {
       path: '/',
       name: 'index',
-      component: inputNumber
+      component: tabPane
     }
   ]
 })
