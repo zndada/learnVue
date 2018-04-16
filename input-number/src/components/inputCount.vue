@@ -9,6 +9,7 @@
 // function isValueNumber(value) {
 //   return (/(^-?[0-9]+\.{1}\d)+$)| (^-?[1-9][0-9]*$)|(^-?0{1}$)/).test(value + "")
 // }
+import { isValueNumber } from '../common/number'
 export default {
   data () {
     return {
@@ -57,7 +58,7 @@ export default {
       var val = event.target.value.trim()
       var max = this.max
       var min = this.min
-      if ((val)) {
+      if (isValueNumber(val)) {
         val = Number(val)
         this.currentValue = val
         if (val > max) {
