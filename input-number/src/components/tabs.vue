@@ -98,7 +98,7 @@ export default {
   }
 }
 </script>
-<style>
+<style scoped>
 .tabs{
   font-size: 14px;
   color: #657180
