@@ -4,6 +4,7 @@ import inputNumber from '@/components/inputNumber'
 import tabPane from '@/components/tabPane'
 import clickOutSide from '@/components/clickOutSide'
 import time from '@/components/time'
+import table from '@/components/table'
 Vue.use(Router)
 
 export default new Router({
@@ -27,6 +28,11 @@ export default new Router({
       path: '/time',
       name: 'index',
       component: time
+    },
+    {
+      path: '/table',
+      name: 'index',
+      component: table
     }
   ]
 })
