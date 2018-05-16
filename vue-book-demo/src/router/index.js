@@ -5,6 +5,7 @@ import tabPane from '@/components/tabPane'
 import clickOutSide from '@/components/clickOutSide'
 import time from '@/components/time'
 import table from '@/components/table'
+import message from '../page/message.vue'
 Vue.use(Router)
 
 export default new Router({
@@ -33,6 +34,11 @@ export default new Router({
       path: '/table',
       name: 'index',
       component: table
+    },
+    {
+      path: '/message',
+      name: 'message',
+      component: message
     }
   ]
 })

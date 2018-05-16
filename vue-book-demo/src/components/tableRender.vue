@@ -24,7 +24,7 @@ export default {
   render: function (h) {
     var _this = this
     var ths = []
-    this.currentColumns.forEach(function (col, index) {      
+    this.currentColumns.forEach(function (col, index) {
       if (col.sortable) {
         ths.push(h('th', [
           h('span', col.title),
@@ -119,7 +119,7 @@ export default {
       var sortedColumn = this.currentColumns.filter(function (col) {
         return col._sortType !== 'normal'
       })
-      if (sortedColumn.length > 0) {        
+      if (sortedColumn.length > 0) {
         if (sortedColumn[0]._sortType === 'asc') {
           this.handleSortByAsc(sortedColumn[0]._index)
         } else {
